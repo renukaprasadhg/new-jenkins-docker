@@ -1,3 +1,5 @@
-FROM alpine
+FROM tomcat
 MAINTAINER "sam"
-COPY ./Calendar.war /home/ubuntu/tomcat/apache-tomcat-8.5.75/webapps
+COPY Calender.war /usr/local/tomcat/webapps
+CMD ["catalina.sh", "run"]
+
